@@ -10,20 +10,33 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *youAre;
+@property (weak, nonatomic) IBOutlet UILabel *personName;
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (strong, nonatomic) IBOutlet UITextField *lastName;
+
 @end
 
 @implementation ViewController
-- (IBAction)firstName {
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [_youAre setHidden:YES];
+    [_personName setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)generateName {
+    NSString *first = _firstName.text;
+    NSString *last = _lastName.text;
+    NSLog(@"%@", first);
+    NSLog(@"%@", last);
+}
+
+- (void)reset {
+    
 }
 
 @end
