@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2D20471A4619340095416D /* NameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2D20461A4619340095416D /* NameGenerator.m */; };
 		EB300E531A44E74600AC4364 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB300E521A44E74600AC4364 /* main.m */; };
 		EB300E561A44E74600AC4364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB300E551A44E74600AC4364 /* AppDelegate.m */; };
 		EB300E591A44E74600AC4364 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB300E581A44E74600AC4364 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2D20461A4619340095416D /* NameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameGenerator.m; sourceTree = "<group>"; };
 		EB300E4D1A44E74600AC4364 /* WuNameMe-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WuNameMe-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB300E511A44E74600AC4364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB300E521A44E74600AC4364 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				EB300E551A44E74600AC4364 /* AppDelegate.m */,
 				EB300E571A44E74600AC4364 /* ViewController.h */,
 				EB300E581A44E74600AC4364 /* ViewController.m */,
+				EB2D20461A4619340095416D /* NameGenerator.m */,
 				EB300E5A1A44E74600AC4364 /* Main.storyboard */,
 				EB300E5D1A44E74600AC4364 /* Images.xcassets */,
 				EB300E5F1A44E74600AC4364 /* LaunchScreen.xib */,
@@ -221,6 +224,7 @@
 			files = (
 				EB300E591A44E74600AC4364 /* ViewController.m in Sources */,
 				EB300E561A44E74600AC4364 /* AppDelegate.m in Sources */,
+				EB2D20471A4619340095416D /* NameGenerator.m in Sources */,
 				EB300E531A44E74600AC4364 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				EB300E721A44E74600AC4364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB300E731A44E74600AC4364 /* Build configuration list for PBXNativeTarget "WuNameMe-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				EB300E751A44E74600AC4364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

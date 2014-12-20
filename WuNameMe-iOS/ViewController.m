@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NameGenerator.m"
 
 @interface ViewController ()
 
@@ -33,6 +34,11 @@
     NSString *last = _lastName.text;
     NSLog(@"%@", first);
     NSLog(@"%@", last);
+    
+    _youAre.text = @"";
+    _firstName.text = @"";
+    [_youAre setHidden:NO];
+    [_personName setHidden:NO];
 }
 
 - (void)reset {
