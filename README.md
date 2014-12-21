@@ -9,6 +9,25 @@ Dolla dolla bill y'all</i>
 ## Inspiration
 [Wu-Tang Names Generator](http://www.mess.be/inickgenwuname.php)
 
+## Setup
+If you don't already have [CocoaPods](http://cocoapods.org/), install it.
+
+        gem install cocoapods
+        pod setup
+
+Clone this repository.
+
+		git clone https://github.com/xasos/WuNameMe-iOS
+
+Install it's dependencies
+
+		cd WuNameMe-iOS
+		pod install
+
+Open the project
+
+		open WuNameMe.xcodeproj
+
 ## Download 
 The app can be downloaded directly from the [App Store <i>soon</i>](http://appstore.com) or built from source.
 
