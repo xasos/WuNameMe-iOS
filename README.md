@@ -28,9 +28,10 @@ Open the workspace (not the project)
 
 		open WuNameMe.xcworkspace
 Run the project
-		Select 'MBus' target
-		Select 'Debug' build scheme
-    		Run
+
+		Select 'WuNameMe' target
+    		Select 'Debug' build scheme
+		Run
 
 ## Download 
 The app can be downloaded directly from the [App Store <i>soon</i>](http://appstore.com) or built from source.
