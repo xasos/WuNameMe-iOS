@@ -30,7 +30,7 @@ Open the workspace (not the project)
 Run the project
 
 		Select 'WuNameMe' target
-    		Select 'Debug' build scheme
+    	Select 'Debug' build scheme
 		Run
 
 ## Download 
