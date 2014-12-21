@@ -24,9 +24,13 @@ Install it's dependencies
 		cd WuNameMe-iOS
 		pod install
 
-Open the project
+Open the workspace (not the project)
 
-		open WuNameMe.xcodeproj
+		open WuNameMe.xcworkspace
+Run the project
+		Select 'MBus' target
+		Select 'Debug' build scheme
+    		Run
 
 ## Download 
 The app can be downloaded directly from the [App Store <i>soon</i>](http://appstore.com) or built from source.
