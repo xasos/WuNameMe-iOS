@@ -6,9 +6,6 @@ Wu-Tang Clan Name Generator, rebuilt for iOS with Objective-C. Original app avai
 <i>C.R.E.A.M. get the money<br>
 Dolla dolla bill y'all</i>
 
-## Inspiration
-[Wu-Tang Names Generator](http://www.mess.be/inickgenwuname.php)
-
 ## Setup
 If you don't already have [CocoaPods](http://cocoapods.org/), install it.
 
@@ -35,6 +32,9 @@ Run the project
 
 ## Download 
 The app can be downloaded directly from the [App Store <i>soon</i>](http://appstore.com) or built from source.
+
+## Inspiration
+[Wu-Tang Names Generator](http://www.mess.be/inickgenwuname.php)
 
 ## License
 [MIT License](LICENSE)
