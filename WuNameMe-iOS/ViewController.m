@@ -2,7 +2,7 @@
 //  ViewController.m
 //  WuNameMe-iOS
 //
-//  Created by Niraj  on 12/19/14.
+//  Created by Niraj Pant on 12/19/14.
 //  Copyright (c) 2014 Niraj Pant. All rights reserved.
 //
 
@@ -36,13 +36,15 @@
     NSLog(@"%@", last);
     
     _youAre.text = @"";
-    _firstName.text = @"";
+    _personName.text = @"";
     [_youAre setHidden:NO];
     [_personName setHidden:NO];
+    [self reset];
 }
 
 - (void)reset {
-    
+    _firstName.text = @"";
+    _lastName.text = @"";
 }
 
 @end
