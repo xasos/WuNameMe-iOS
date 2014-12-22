@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NameGenerator.m"
+#import "AFNetworking.h"
 
 @interface ViewController ()
 
@@ -40,11 +40,21 @@
     [_youAre setHidden:NO];
     [_personName setHidden:NO];
     [self reset];
+    [self downloadTask];
 }
 
 - (void)reset {
     _firstName.text = @"";
     _lastName.text = @"";
+}
+
+- (void)downloadTask {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"http://coinmarketcap.northpole.ro/api/all.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 @end
