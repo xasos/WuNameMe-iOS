@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "AFNetworking.h"
 
 @interface ViewController ()
 
@@ -40,7 +39,6 @@
     [_youAre setHidden:NO];
     [_personName setHidden:NO];
     [self reset];
-    [self downloadTask];
 }
 
 - (void)reset {
@@ -48,13 +46,24 @@
     _lastName.text = @"";
 }
 
-- (void)downloadTask {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://coinmarketcap.northpole.ro/api/all.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"JSON: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
-}
+- (IBAction)tweetName {
+    NSString *finalName = @"test";
+    NSString *tweet = @"intent/tweet?text=From+this+moment+forward,+I+will+be+known+as+";
+    NSString *tweet2 = @".%0A-+And+your+Wu-Tang+name?%0A+http://appsto.re/2l3KA%0A+via+@WuNameMe";
 
+    
+    NSString *finalUrl = [NSString stringWithFormat:@"%@%@%@", tweet, finalName, tweet2];
+
+    NSString *strurl = [NSString stringWithFormat:@"http://www.twitter.com/%@",finalUrl];
+//    NSString *stuff = [NSString stringWithFormat:@"twitter://%@",finalUrl];
+    NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=hello%20world"];
+    
+    NSURL *twitterURL = [NSURL URLWithString:stuff];
+    if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
+        [[UIApplication sharedApplication] openURL:twitterURL];
+    else
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:strurl]];
+    
+    
+}
 @end

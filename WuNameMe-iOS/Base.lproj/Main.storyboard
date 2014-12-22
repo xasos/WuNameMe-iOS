@@ -55,6 +55,17 @@
                                     <action selector="generateName" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AQU-mt-cEQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDo-BO-eZr">
+                                <rect key="frame" x="107" y="416" width="106" height="38"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Tweet Name">
+                                    <color key="titleColor" red="1" green="1" blue="0.03340871711" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweetName" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bVv-Nc-3M8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
