@@ -56,9 +56,10 @@
 
     NSString *strurl = [NSString stringWithFormat:@"http://www.twitter.com/%@",finalUrl];
 //    NSString *stuff = [NSString stringWithFormat:@"twitter://%@",finalUrl];
-    NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=hello%20world"];
-    
+    NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=hello world yo"];
+    stuff = [stuff stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *twitterURL = [NSURL URLWithString:stuff];
+    
     if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
         [[UIApplication sharedApplication] openURL:twitterURL];
     else
