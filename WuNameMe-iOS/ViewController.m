@@ -46,17 +46,18 @@
     _lastName.text = @"";
 }
 
+- (void)calculateScore {
+    
+}
+
+// ugly, hacky way to get tweets showing
 - (IBAction)tweetName {
-    NSString *finalName = @"test";
+    NSString *finalName = @"test2";
     NSString *tweet = @"intent/tweet?text=From+this+moment+forward,+I+will+be+known+as+";
     NSString *tweet2 = @".%0A-+And+your+Wu-Tang+name?%0A+http://appsto.re/2l3KA%0A+via+@WuNameMe";
-
-    
     NSString *finalUrl = [NSString stringWithFormat:@"%@%@%@", tweet, finalName, tweet2];
-
-    NSString *strurl = [NSString stringWithFormat:@"http://www.twitter.com/%@",finalUrl];
-//    NSString *stuff = [NSString stringWithFormat:@"twitter://%@",finalUrl];
-    NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=hello world yo"];
+    NSString *strurl = [NSString stringWithFormat:@"http://www.twitter.com/%@", finalUrl];
+    NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=From this moment forward, I will be known as %@.\nAnd your Wu-Tang name?\ngoo.gl/x4uoMS\nvia @WuNameMe", finalName];
     stuff = [stuff stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *twitterURL = [NSURL URLWithString:stuff];
     
