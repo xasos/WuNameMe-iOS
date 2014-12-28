@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NameGenerator.m"
 
 @interface ViewController ()
 

@@ -15,7 +15,7 @@
 		EB300E5E1A44E74600AC4364 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB300E5D1A44E74600AC4364 /* Images.xcassets */; };
 		EB300E611A44E74600AC4364 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB300E5F1A44E74600AC4364 /* LaunchScreen.xib */; };
 		EB300E6D1A44E74600AC4364 /* WuNameMe_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB300E6C1A44E74600AC4364 /* WuNameMe_iOSTests.m */; };
-		EB36042D1A4F999400406336 /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = EB36042C1A4F999400406336 /* names.json */; };
+		EB36042F1A4FA34500406336 /* NameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB36042E1A4FA34500406336 /* NameGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		EB300E661A44E74600AC4364 /* WuNameMe-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WuNameMe-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB300E6B1A44E74600AC4364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB300E6C1A44E74600AC4364 /* WuNameMe_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WuNameMe_iOSTests.m; sourceTree = "<group>"; };
-		EB36042C1A4F999400406336 /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
+		EB36042E1A4FA34500406336 /* NameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameGenerator.m; sourceTree = "<group>"; };
 		FDE5FA86C8A0A5791A184D68 /* Pods-WuNameMe-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuNameMe-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WuNameMe-iOS/Pods-WuNameMe-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF690AF9EDDE2DFD6F4D06E1 /* libPods-WuNameMe-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WuNameMe-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,9 +99,9 @@
 		EB300E4F1A44E74600AC4364 /* WuNameMe-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EB36042C1A4F999400406336 /* names.json */,
 				EB300E541A44E74600AC4364 /* AppDelegate.h */,
 				EB300E551A44E74600AC4364 /* AppDelegate.m */,
+				EB36042E1A4FA34500406336 /* NameGenerator.m */,
 				EB300E571A44E74600AC4364 /* ViewController.h */,
 				EB300E581A44E74600AC4364 /* ViewController.m */,
 				EB300E5A1A44E74600AC4364 /* Main.storyboard */,
@@ -230,7 +230,6 @@
 			files = (
 				EB300E5C1A44E74600AC4364 /* Main.storyboard in Resources */,
 				EB300E611A44E74600AC4364 /* LaunchScreen.xib in Resources */,
-				EB36042D1A4F999400406336 /* names.json in Resources */,
 				EB300E5E1A44E74600AC4364 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +283,7 @@
 			files = (
 				EB300E591A44E74600AC4364 /* ViewController.m in Sources */,
 				EB300E561A44E74600AC4364 /* AppDelegate.m in Sources */,
+				EB36042F1A4FA34500406336 /* NameGenerator.m in Sources */,
 				EB300E531A44E74600AC4364 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
