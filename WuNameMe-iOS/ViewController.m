@@ -60,12 +60,11 @@
     NSString *stuff = [NSString stringWithFormat:@"twitter://post?message=From this moment forward, I will be known as %@.\nAnd your Wu-Tang name?\ngoo.gl/x4uoMS\nvia @WuNameMe", finalName];
     stuff = [stuff stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *twitterURL = [NSURL URLWithString:stuff];
-    
+
     if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
         [[UIApplication sharedApplication] openURL:twitterURL];
     else
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:strurl]];
-    
     
 }
 @end
