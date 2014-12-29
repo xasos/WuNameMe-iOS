@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NameGenerator.m"
+#import "AFNetworking.h"
 
 @interface ViewController ()
 
@@ -35,17 +36,23 @@
     NSLog(@"%@", first);
     NSLog(@"%@", last);
     
+    //get score for first and last
+    int length2 = [first length];
+    NSLog(@"%d", length2);
+    for (int i=0; i<3; i++) {
+        NSLog(@"%d", i);
+    }
+    
+//    NSString *newString = [first substringWithRange:NSMakeRange(i, 1)];
+    
     _youAre.text = @"";
     _personName.text = @"";
     [_youAre setHidden:NO];
     [_personName setHidden:NO];
     [self reset];
+//    [self getNames];
 }
 
-- (void)reset {
-    _firstName.text = @"";
-    _lastName.text = @"";
-}
 
 - (void)calculateScore {
     
@@ -67,5 +74,19 @@
     else
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:strurl]];
     
+}
+
+- (void)getNames {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"https://cdn.rawgit.com/xasos/WuNameMe-iOS/master/names.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
+- (void)reset {
+    _firstName.text = @"";
+    _lastName.text = @"";
 }
 @end
