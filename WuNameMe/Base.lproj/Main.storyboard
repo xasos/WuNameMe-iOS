@@ -72,8 +72,10 @@
                         <outlet property="firstNameField" destination="sVM-XB-H5q" id="PiC-LO-9Jr"/>
                         <outlet property="lastName" destination="mUb-EC-IeZ" id="aoF-ZY-ves"/>
                         <outlet property="lastNameField" destination="mUb-EC-IeZ" id="DDw-FH-x17"/>
+                        <outlet property="nameLabel" destination="O0b-HZ-TTV" id="6r1-RD-3tB"/>
                         <outlet property="personName" destination="O0b-HZ-TTV" id="kKh-I4-u44"/>
                         <outlet property="youAre" destination="oZW-Q6-RNU" id="tqX-lL-cT7"/>
+                        <outlet property="youAreLabel" destination="oZW-Q6-RNU" id="sFh-SB-gK8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
