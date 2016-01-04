@@ -1,7 +1,7 @@
 WuNameMe-iOS
 ========
 
-Wu-Tang Clan Name Generator, rebuilt for iOS with Objective-C. Original app available [here](https://github.com/xasos/WuNameMe). Names are pulled from various sources and are served on the web through [RawGit](https://cdn.rawgit.com/xasos/WuNameMe-iOS/master/names.json).
+Wu-Tang Clan Name Generator, rebuilt for iOS with Swift. Original app available [here](https://github.com/xasos/WuNameMe). Names are pulled from various sources and are served on the web with [RawGit](https://cdn.rawgit.com/xasos/WuNameMe-iOS/master/names.json).
 
 <i>C.R.E.A.M. get the money<br>
 Dolla dolla bill y'all</i>

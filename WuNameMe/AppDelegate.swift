@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  WuNameMe
-//
-//  Created by Niraj  on 1/3/16.
-//  Copyright © 2016 Niraj Pant. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
